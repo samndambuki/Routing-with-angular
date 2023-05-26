@@ -1,0 +1,13 @@
+<!-- <p>templatedrivenform works!</p> -->
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+    <input type="text" name="name" placeholder="Enter your name" ngModel>
+    <br>
+    <br>
+    <input type="password" name="password" placeholder="Enter your password" ngModel>
+    <br>
+    <br>
+    <button>Login</button>
+
+</form>
+
+<button (click)="loginUser(loginForm.value)">Outside button</button>
